@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import React from "react";
 import Layout from "../components/NavbarBlock/Layout";
 import Register from "../components/auth/Register";
@@ -22,7 +22,7 @@ import AlbumLandingContent from "../components/AlbumLandingPage/AlbumLandingCont
 import AlbumDetails from "../components/AlbumLandingPage/AlbumDetails";
 import ArtistSongs from "../components/AlbumLandingPage/ArtistSongs";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
